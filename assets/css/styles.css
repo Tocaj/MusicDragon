@@ -1,0 +1,74 @@
+img{
+  border:0;
+  width:auto;
+  height:30px;
+  overflow:hidden;
+}
+
+input[type=search]{
+  -webkit-box-sizing:content-box;
+  -moz-box-sizing:content-box;
+  box-sizing:content-box;
+  -webkit-appearance:textfield;
+  width:100%;
+}
+
+input#searchInput{
+  width:50%;
+  border:5px;
+  margin-right:7px;
+  border:groove;
+}
+
+.container{
+  padding-right:15px;
+  padding-left:15px;
+  margin-right:auto;
+  margin-left:auto;
+  text-align:center;
+}
+
+.showArtist{
+  border:groove;
+  text-align:center;
+}
+
+.spanName{
+  font-size:100%;
+  font-weight:bolder;
+}
+
+.spanGen{
+  color:red;
+  font-weight:bold;
+}
+
+.showArtist{
+  margin-bottom:7px;
+}
+
+p{
+  margin:0 0 10px;
+  text-align:left;
+}
+
+#artistPage{
+  width:90%;
+  border:none;
+  margin-top:7px;
+}
+
+div#divLinks{
+  text-align:left;
+  width:80%;
+  margin-left:10%;
+  margin-bottom:5%;
+}
+
+img#headerArtist{
+  height:200px;
+  background:url(../../assets/img/coldplay.jpg) no-repeat center;
+  background-size:cover;
+  width:100%;
+}
+

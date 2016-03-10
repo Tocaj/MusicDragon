@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MusicDragon</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cookie">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/Pretty-Header.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-default custom-header">
+        <div class="container-fluid">
+            <div class="navbar-header"><a class="navbar-brand navbar-link" href="#">Music<span>Dragon <img src="assets/img/musicdragon.png"></span> </a>
+                <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-collapse">
+                <ul class="nav navbar-nav links">
+                    <li role="presentation"><a href="#">Min profil</a></li>
+                    <li role="presentation"><a href="#">Om </a></li>
+                    <li role="presentation"><a href="#"> Kontakt</a></li>
+                    <li role="presentation"><a href="#" class="custom-navbar">Knapp </a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false" href="#"> <span class="caret"></span><img src="assets/img/avatar.jpg" class="dropdown-image"></a>
+                        <ul class="dropdown-menu dropdown-menu-right" role="menu">
+                            <li><a href="#">Settings </a></li>
+                            <li><a href="#">Payments </a></li>
+                            <li class="active"><a href="#">Logout </a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <input type="text" placeholder="Sök på en artist eller band" id="searchInput">
+        <button class="btn btn-primary btn-sm" type="button">Button</button>
+    </div>
+    <div class="container" id="artistPage"><img id="headerArtist">
+        <h2>Coldplay </h2>
+        <h4 class="text-muted">Söker gitarrist</h4>
+        <div><audio controls><source src="assets/audio/coldplay1.mp3" type='audio/mpeg'>Ljuduppspelning stödjs ej</audio></div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+            dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+    </div>
+    <div id="divLinks">
+        <span><a href ="#">Coldplays Facebook</a><br></span>
+        <span><a href="#">Sök medlemskap
+    </a></span>
+        <div id="divMusic"></div>
+    </div>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+</body>
+
+</html>
