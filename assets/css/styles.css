@@ -65,10 +65,13 @@ div#divLinks{
   margin-bottom:5%;
 }
 
-img#headerArtist{
-  height:200px;
-  background:url(../../assets/img/coldplay.jpg) no-repeat center;
-  background-size:cover;
-  width:100%;
+#headerArtist{
+  height:220px;
+  background: no-repeat center;
+  background-size: cover;
+    width: 100%;
+ 
 }
 
+
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MusicDragon</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cookie">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/Pretty-Header.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-default custom-header">
+        <div class="container-fluid">
+            <div class="navbar-header"><a class="navbar-brand navbar-link" href="#">Music<span>Dragon <img src="assets/img/musicdragon.png"></span> </a>
+                <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-collapse">
+                <ul class="nav navbar-nav links">
+                    <li role="presentation"><a href="index.html">Hem</a></li>
+                    <li role="presentation"><a href="artister.html">Artister</a></li>
+                    <li role="presentation"><a href="kontakt.html">Kontakt</a></li>
+                    <li role="presentation"><a href="#">Hitta ett band</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown">
+                      
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <input type="text" placeholder="Sök på en artist eller band" id="searchInput">
+        <button class="btn btn-primary btn-sm" type="button" id="buttonSearch">Sök</button>
+    </div>
+    <div class="container" id="divResult"></div>
+    <div class="container" id="artistPage"><img id="headerArtist" src="assets/img/kent.jpg">
+        <h2>Kent</h2>
+        <h4 class="text-muted">Söker gitarrist</h4>
+        <div><audio controls><source src="assets/audio/kent.mp3" type='audio/mpeg'>Ljuduppspelning stödjs ej</audio></div>
+        <p>Kent är ett svenskt rockband från Eskilstuna som sedan mitten av 1990-talet etablerat sig som en av de mest framgångsrika grupperna i Skandinavien. Med mer än 2,3 miljoner sålda fullängdsalbum har Kent flera gånger givits epitetet "Sveriges största rockband".
+
+Gruppen bildades 1990 under namnet Jones & Giftet, senare Havsänglar, nuvarande namn sedan 1993. Originalmedlemmarna var Joakim Berg, Martin Sköld, Markus Mustonen, Sami Sirviö och Thomas Bergqvist. Bergqvist ersattes av Martin Roos 1992 som i sin tur lämnade gruppen 1995, kort efter utgivningen av debutalbumet Kent. De första listframgångarna kom först 1996 i samband med singeln "Kräm (så nära får ingen gå)". Samma år rekryterades gitarristen Harri Mänty som var medlem i bandet fram till 2006.
+
+Sedan Kents andra album, Verkligen (1996), har de toppat Sverigetopplistan med samtliga nio efterföljande studioalbum, varav Vapen & ammunition (2002) tillbringat längst tid på listan med 85 veckor totalt. De har även toppat den svenska singellistan med låtarna "Dom andra", "Max 500", "Palace & Main", "Töntarna", "2000" och "Gamla Ullevi".
+
+Kent blev 2016 invalda i Swedish Music Hall of Fame. </p>
+    </div>
+    <div id="divLinks">
+        <span><a href ="#">Kent på Facebook</a><br></span>
+        <span><a href="#">Sök medlemskap
+    </a></span>
+        <div id="divMusic"></div>
+    </div>
+    <script src="assets/js/main.js"</script>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+</body>
+
+</html>
