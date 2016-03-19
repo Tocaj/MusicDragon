@@ -1,5 +1,4 @@
-var artists = ["coldplay", "kent", "omnium gatherum", "frans", "adele"];
-var newArtists = [];
+var artists = [];
 var resultCounter = [];
 var searchString, resultString, index, sIndex, result1, result2;
 
@@ -15,6 +14,7 @@ $("#buttonSearch").on("click", function() {
 
 function search () {
     searchString = $("#searchInput").val(); 
+    artists = ["coldplay", "kent", "omnium gatherum", "frans", "adele"];
     resultCounter = [0, 0, 0, 0, 0];
     searchString = searchString.toLowerCase();
     
@@ -32,8 +32,8 @@ function search () {
     }
     
     clearResults("divResult");
-    setIndexes(resultCounter);   
-    appendResults(result1);
+    setIndexes();   
+    appendResults();
 //    appendResults(result2);
     
     
@@ -45,22 +45,45 @@ function clearResults (id) {
     document.getElementById(id).innerHTML = "<br>";
 }
 
-function setIndexes (array) {
-    newArtists = ["coldplay", "kent", "omnium gatherum", "frans", "adele"];
-    index = array.indexOf(Math.max.apply(null, array)); 
-//    result1 = artists[index];
-//    console.log(result1);
-    array.splice(index, 1); 
-    newArtists.splice(index, 1);
-    sIndex = Math.max.apply(null, array); 
-//    result2 = newArtists[sIndex];
+function setIndexes () {
+    index = resultCounter.indexOf(Math.max.apply(null, resultCounter)); 
+    
+//    console.log("index");
+//    console.log(index);
+//    
+    result1 = artists[index];
+    
+//    console.log("rC v1");
+//    console.log(resultCounter);
+    
+    resultCounter.splice(index, 1);
+    
+//    console.log("rC v2");
+//    console.log(resultCounter);
+//    
+//    console.log("artists[] v1");
+//    console.log(artists);
+//    
+    artists.splice(index, 1);
+    
+//    console.log("artists[] v2");
+//    console.log(artists);
+    
+    sIndex = resultCounter.indexOf(Math.max.apply(null, resultCounter));
+    
+//    console.log("sIndex");
+//    console.log(sIndex);
+    
+    result2 = artists[sIndex];
+  
 }
 
-function appendResults(result) {
-    var ph = result;
-//    resultString = result.substring(0, 1).toUpperCase() + result.substring(1);    
-    resultString = artists[index].substring(0, 1).toUpperCase() + artists[index].substring(1); 
-    $("#divResult").append("<div class='showArtist'><a href='" + result + ".html'>" + resultString + "</a><br></div>");    
+function appendResults() {
+    resultString = result1.substring(0, 1).toUpperCase() + result1.substring(1); 
+    $("#divResult").append("<div class='showArtist'><a href='" + result1 + ".html'>" + result1 + "</a><br></div>");    
+    
+    resultString = result2.substring(0, 1).toUpperCase() + result2.substring(1); 
+    $("#divResult").append("<div class='showArtist'><a href='" + result2 + ".html'>" + result2 + "</a><br></div>"); 
 }
 
 

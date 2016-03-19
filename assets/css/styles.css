@@ -5,6 +5,11 @@ img{
   overflow:hidden;
 }
 
+#notes{
+  width: 100%;
+  height: auto;
+}
+
 input[type=search]{
   -webkit-box-sizing:content-box;
   -moz-box-sizing:content-box;
@@ -50,6 +55,8 @@ input#searchInput{
 p{
   margin:0 0 10px;
   text-align:left;
+  font-family: 'PT Sans Narrow', sans-serif;
+  font-size: 17px;
 }
 
 #artistPage{
@@ -71,6 +78,11 @@ div#divLinks{
   background-size: cover;
     width: 100%;
  
+}
+
+h2{
+  font-family: 'Fjalla One', sans-serif;
+
 }
 
 
