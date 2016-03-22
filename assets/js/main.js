@@ -80,10 +80,10 @@ function setIndexes () {
 
 function appendResults() {
     resultString = result1.substring(0, 1).toUpperCase() + result1.substring(1); 
-    $("#divResult").append("<div class='showArtist'><a href='" + result1 + ".html'>" + result1 + "</a><br></div>");    
+    $("#divResult").append("<div class='showArtist'><a href='" + result1 + ".html'>" + resultString + "</a><br></div>");    
     
     resultString = result2.substring(0, 1).toUpperCase() + result2.substring(1); 
-    $("#divResult").append("<div class='showArtist'><a href='" + result2 + ".html'>" + result2 + "</a><br></div>"); 
+    $("#divResult").append("<div class='showArtist'><a href='" + result2 + ".html'>" + resultString + "</a><br></div>"); 
 }
 
 

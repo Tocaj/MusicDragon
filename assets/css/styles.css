@@ -1,3 +1,15 @@
+.showArtist{
+  margin-bottom:7px;
+  box-shadow: 8px 8px 5px #262626;
+  font-family: 'PT Sans Narrow', sans-serif;
+  font-size: 17px;
+}
+
+.spanName > a {
+    color: #c44dff;
+    font-size: 20px;
+}
+
 img{
   border:0;
   width:auto;
@@ -44,13 +56,10 @@ input#searchInput{
 }
 
 .spanGen{
-  color:red;
+  color:black;
   font-weight:bold;
 }
 
-.showArtist{
-  margin-bottom:7px;
-}
 
 p{
   margin:0 0 10px;
@@ -73,7 +82,7 @@ div#divLinks{
 }
 
 #headerArtist{
-  height:220px;
+  height:25%;
   background: no-repeat center;
   background-size: cover;
     width: 100%;
@@ -86,4 +95,9 @@ h2{
 }
 
 
+@media screen and (min-width: 1025px) {
+    
+    #headerArtist{
+        width: 75%;
+    }
 }
